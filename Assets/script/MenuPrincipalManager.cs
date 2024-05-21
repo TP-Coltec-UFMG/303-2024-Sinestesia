@@ -29,6 +29,7 @@ public class MenuPrincipalManager : MonoBehaviour{
     EventSystem.current.SetSelectedGameObject(opcoesFechadoBotao);
     }
 
+
    public void SairJogo(){
     Debug.Log("Sair do jogo");
     Application.Quit();
