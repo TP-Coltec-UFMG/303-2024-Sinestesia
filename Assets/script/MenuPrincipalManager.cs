@@ -12,7 +12,7 @@ public class MenuPrincipalManager : MonoBehaviour{
     [SerializeField] private GameObject opcoesAbertoBotao, opcoesFechadoBotao;
 
     public void Jogar(){
-    SceneManager.LoadScene(nomeDoLevelDeJogo);
+    SceneManager.LoadScene("Fase1");
    }
 
    public void AbrirOpcoes(){
