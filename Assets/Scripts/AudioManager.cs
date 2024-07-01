@@ -9,8 +9,8 @@ public class AudioManager : MonoBehaviour
     public Sound[] sfxSounds;
 
     [Header("--------Audio Source--------")]
-    [SerializeField] AudioSource musicSource;
-    [SerializeField] AudioSource sfxSource;
+    [SerializeField] public AudioSource musicSource;
+    [SerializeField] public AudioSource sfxSource;
 
     [Header("--------Audio Clip--------")]
     public AudioClip menu;
@@ -29,8 +29,13 @@ public class AudioManager : MonoBehaviour
     }
 
     private void Start() {
-        musicSource.clip = menu;
-        musicSource.Play();
+        if (menu == null)
+            return;
+        else
+        {
+            musicSource.clip = menu;
+            musicSource.Play();
+        }
     }
     public void PlaySFX(string name)
     {

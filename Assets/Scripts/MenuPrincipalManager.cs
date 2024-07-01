@@ -12,6 +12,7 @@ public class MenuPrincipalManager : MonoBehaviour{
     [SerializeField] private GameObject opcoesAbertoBotao, opcoesFechadoBotao;
 
     public void Jogar(){
+    AudioManager.instance.musicSource.Stop();
     SceneManager.LoadScene("Fase1");
    }
 
