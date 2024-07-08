@@ -1863,6 +1863,7 @@ GameObject:
   - component: {fileID: 582765770}
   - component: {fileID: 582765769}
   - component: {fileID: 582765768}
+  - component: {fileID: 582765772}
   m_Layer: 5
   m_Name: popTristeButton
   m_TagString: Untagged
@@ -1914,9 +1915,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 582765767}
         m_TargetAssemblyTypeName: PlayAudioOnClick, Assembly-CSharp
-        m_MethodName: musicClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1984,6 +1985,19 @@ RectTransform:
   m_AnchoredPosition: {x: -937, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &582765772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582765767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227ed8894309eb2498ec2aee14c01552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 582765768}
 --- !u!1 &583900484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2158,7 +2172,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &639979939
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2496,6 +2510,7 @@ GameObject:
   - component: {fileID: 757741670}
   - component: {fileID: 757741669}
   - component: {fileID: 757741668}
+  - component: {fileID: 757741672}
   m_Layer: 5
   m_Name: popRaivosoButton
   m_TagString: Untagged
@@ -2547,9 +2562,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 757741667}
         m_TargetAssemblyTypeName: PlayAudioOnClick, Assembly-CSharp
-        m_MethodName: musicClick
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2617,6 +2632,19 @@ RectTransform:
   m_AnchoredPosition: {x: -465, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &757741672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757741667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 227ed8894309eb2498ec2aee14c01552, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  btn: {fileID: 757741668}
 --- !u!1 &771313340
 GameObject:
   m_ObjectHideFlags: 0
