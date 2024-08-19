@@ -7,6 +7,10 @@ public class PlayAudioOnClick : MonoBehaviour
     public GameObject botaoClicado;
     public void musicClick()
     {
+        if (AudioManager.instance.sfxSource != null && AudioManager.instance.sfxSource.isPlaying)
+        {
+            AudioManager.instance.sfxSource.Stop();
+        }
         switch (botaoClicado.name)
         {
             case "popFelizButton":

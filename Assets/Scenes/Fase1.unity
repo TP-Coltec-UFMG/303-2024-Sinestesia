@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1915,9 +1914,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 582765767}
+      - m_Target: {fileID: 582765772}
         m_TargetAssemblyTypeName: PlayAudioOnClick, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: musicClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1994,10 +1993,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 582765767}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227ed8894309eb2498ec2aee14c01552, type: 3}
+  m_Script: {fileID: 11500000, guid: 4092baaff6cd52b47863e04d21f66947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 582765768}
+  botaoClicado: {fileID: 582765767}
 --- !u!1 &583900484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2562,9 +2561,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 757741667}
+      - m_Target: {fileID: 757741672}
         m_TargetAssemblyTypeName: PlayAudioOnClick, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: musicClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2641,10 +2640,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 757741667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227ed8894309eb2498ec2aee14c01552, type: 3}
+  m_Script: {fileID: 11500000, guid: 4092baaff6cd52b47863e04d21f66947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 757741668}
+  botaoClicado: {fileID: 757741667}
 --- !u!1 &771313340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2842,9 +2841,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 885315613}
+      - m_Target: {fileID: 885315618}
         m_TargetAssemblyTypeName: PlayAudioOnClick, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: musicClick
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2921,10 +2920,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 885315613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 227ed8894309eb2498ec2aee14c01552, type: 3}
+  m_Script: {fileID: 11500000, guid: 4092baaff6cd52b47863e04d21f66947, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  btn: {fileID: 885315614}
+  botaoClicado: {fileID: 885315613}
 --- !u!1 &916455859
 GameObject:
   m_ObjectHideFlags: 0
