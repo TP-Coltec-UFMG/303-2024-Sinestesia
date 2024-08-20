@@ -100,4 +100,8 @@ public class PhaseSystem : MonoBehaviour
             crowd.agrado -= 2;
         }
     }
+
+    public void sairParaMenu(){
+    SceneManager.LoadScene("menuSinestesia");
+   }
 }
