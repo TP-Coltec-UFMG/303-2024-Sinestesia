@@ -59,12 +59,7 @@
       "dependencies": {
         "com.unity.2d.animation": "9.1.1",
         "com.unity.2d.common": "8.0.2",
-<<<<<<< HEAD
         "com.unity.2d.sprite": "1.0.0"
-=======
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.2d.animation": "9.1.1"
->>>>>>> 3a8a16d503e550860841aae1e41ace434e63dfb1
       },
       "url": "https://packages.unity.com"
     },
@@ -79,12 +74,8 @@
       "depth": 1,
       "source": "registry",
       "dependencies": {
-<<<<<<< HEAD
-=======
         "com.unity.2d.common": "8.0.3",
->>>>>>> 3a8a16d503e550860841aae1e41ace434e63dfb1
         "com.unity.mathematics": "1.1.0",
-        "com.unity.2d.common": "8.0.3",
         "com.unity.modules.physics2d": "1.0.0"
       },
       "url": "https://packages.unity.com"
@@ -112,11 +103,7 @@
     },
     "com.unity.burst": {
       "version": "1.8.17",
-<<<<<<< HEAD
-      "depth": 1,
-=======
       "depth": 3,
->>>>>>> 3a8a16d503e550860841aae1e41ace434e63dfb1
       "source": "registry",
       "dependencies": {
         "com.unity.mathematics": "1.2.1",
