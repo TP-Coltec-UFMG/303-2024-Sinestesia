@@ -706,6 +706,7 @@ GameObject:
   - component: {fileID: 274555514}
   - component: {fileID: 274555513}
   - component: {fileID: 274555512}
+  - component: {fileID: 274555515}
   m_Layer: 5
   m_Name: Plateia
   m_TagString: Untagged
@@ -827,6 +828,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274555510}
   m_CullTransparentMesh: 1
+--- !u!114 &274555515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274555510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: Aperte enter para plateia
 --- !u!1 &279837710
 GameObject:
   m_ObjectHideFlags: 0
@@ -1355,6 +1370,7 @@ GameObject:
   - component: {fileID: 371123760}
   - component: {fileID: 371123759}
   - component: {fileID: 371123758}
+  - component: {fileID: 371123762}
   m_Layer: 5
   m_Name: thirdPersonButton
   m_TagString: Untagged
@@ -1464,6 +1480,20 @@ RectTransform:
   m_AnchoredPosition: {x: -667, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &371123762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 371123757}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para ouvir a fala da terceira pessoa.
 --- !u!1 &393822310
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,6 +1924,7 @@ GameObject:
   - component: {fileID: 512395086}
   - component: {fileID: 512395085}
   - component: {fileID: 512395084}
+  - component: {fileID: 512395088}
   m_Layer: 5
   m_Name: secondPersonButton
   m_TagString: Untagged
@@ -2003,6 +2034,20 @@ RectTransform:
   m_AnchoredPosition: {x: -1055, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &512395088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 512395083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para ouvir a fala da segunda pessoa
 --- !u!1 &582765767
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,6 +2061,7 @@ GameObject:
   - component: {fileID: 582765769}
   - component: {fileID: 582765768}
   - component: {fileID: 582765772}
+  - component: {fileID: 582765773}
   m_Layer: 5
   m_Name: popTristeButton
   m_TagString: Untagged
@@ -2150,6 +2196,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botaoClicado: {fileID: 582765767}
+--- !u!114 &582765773
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 582765767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para tocar pop triste
 --- !u!1 &583900484
 GameObject:
   m_ObjectHideFlags: 0
@@ -2198,6 +2258,7 @@ GameObject:
   - component: {fileID: 601126037}
   - component: {fileID: 601126036}
   - component: {fileID: 601126035}
+  - component: {fileID: 601126038}
   m_Layer: 5
   m_Name: Sair
   m_TagString: Untagged
@@ -2319,6 +2380,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 601126033}
   m_CullTransparentMesh: 1
+--- !u!114 &601126038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 601126033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para sair
 --- !u!1 &639979938
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,6 +2482,7 @@ GameObject:
   - component: {fileID: 666389852}
   - component: {fileID: 666389851}
   - component: {fileID: 666389850}
+  - component: {fileID: 666389853}
   m_Layer: 5
   m_Name: sairButton
   m_TagString: Untagged
@@ -2528,6 +2604,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666389848}
   m_CullTransparentMesh: 1
+--- !u!114 &666389853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 666389848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para voltar ao painel principal
 --- !u!1 &713562850
 GameObject:
   m_ObjectHideFlags: 0
@@ -2675,6 +2765,7 @@ GameObject:
   - component: {fileID: 757741669}
   - component: {fileID: 757741668}
   - component: {fileID: 757741672}
+  - component: {fileID: 757741673}
   m_Layer: 5
   m_Name: popRaivosoButton
   m_TagString: Untagged
@@ -2809,6 +2900,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botaoClicado: {fileID: 757741667}
+--- !u!114 &757741673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 757741667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para tocar pop raivoso
 --- !u!1 &771313340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2926,7 @@ GameObject:
   - component: {fileID: 771313344}
   - component: {fileID: 771313343}
   - component: {fileID: 771313342}
+  - component: {fileID: 771313345}
   m_Layer: 5
   m_Name: Sair
   m_TagString: Untagged
@@ -2942,6 +3048,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 771313340}
   m_CullTransparentMesh: 1
+--- !u!114 &771313345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 771313340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para voltar ao painel principal
 --- !u!1 &885315613
 GameObject:
   m_ObjectHideFlags: 0
@@ -2955,6 +3075,7 @@ GameObject:
   - component: {fileID: 885315615}
   - component: {fileID: 885315614}
   - component: {fileID: 885315618}
+  - component: {fileID: 885315619}
   m_Layer: 5
   m_Name: popFelizButton
   m_TagString: Untagged
@@ -3089,6 +3210,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   botaoClicado: {fileID: 885315613}
+--- !u!114 &885315619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 885315613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para tocar pop feliz
 --- !u!1 &916455859
 GameObject:
   m_ObjectHideFlags: 0
@@ -3845,6 +3980,7 @@ GameObject:
   - component: {fileID: 1392350332}
   - component: {fileID: 1392350331}
   - component: {fileID: 1392350330}
+  - component: {fileID: 1392350333}
   m_Layer: 5
   m_Name: Tocar
   m_TagString: Untagged
@@ -3966,6 +4102,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1392350328}
   m_CullTransparentMesh: 1
+--- !u!114 &1392350333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1392350328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: Aperte enter para tocar
 --- !u!1 &1422212285
 GameObject:
   m_ObjectHideFlags: 0
@@ -4632,6 +4782,7 @@ GameObject:
   - component: {fileID: 1815587427}
   - component: {fileID: 1815587426}
   - component: {fileID: 1815587425}
+  - component: {fileID: 1815587429}
   m_Layer: 5
   m_Name: firstPersonButton
   m_TagString: Untagged
@@ -4741,6 +4892,20 @@ RectTransform:
   m_AnchoredPosition: {x: -1438, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1815587429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1815587424}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: Aperte enter para ouvir fala da primeira pessoa
 --- !u!1 &1954074760
 GameObject:
   m_ObjectHideFlags: 0
@@ -4962,6 +5127,7 @@ GameObject:
   - component: {fileID: 2058663925}
   - component: {fileID: 2058663924}
   - component: {fileID: 2058663923}
+  - component: {fileID: 2058663926}
   m_Layer: 5
   m_Name: "Op\xE7\xF5es"
   m_TagString: Untagged
@@ -5071,6 +5237,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058663921}
   m_CullTransparentMesh: 1
+--- !u!114 &2058663926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2058663921}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: "aperte enter para abrir as op\xE7\xF5es"
 --- !u!1 &2063227638
 GameObject:
   m_ObjectHideFlags: 0
@@ -5141,6 +5321,7 @@ GameObject:
   - component: {fileID: 2067651410}
   - component: {fileID: 2067651409}
   - component: {fileID: 2067651408}
+  - component: {fileID: 2067651412}
   m_Layer: 5
   m_Name: fourthPersonButton
   m_TagString: Untagged
@@ -5250,6 +5431,65 @@ RectTransform:
   m_AnchoredPosition: {x: -293, y: 0}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2067651412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2067651407}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 2074362365}
+  textToSpeak: aperte enter para ouvir a fala da quarta pessoa
+--- !u!1 &2074362364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2074362366}
+  - component: {fileID: 2074362365}
+  m_Layer: 0
+  m_Name: TTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2074362365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074362364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3451cf4c452bd0342a5c134979549316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  language: pt
+--- !u!4 &2074362366
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074362364}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 880.9582, y: 503.68442, z: -8.106617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078380863
 GameObject:
   m_ObjectHideFlags: 0
@@ -5373,6 +5613,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2063227640}
+  - {fileID: 2074362366}
   - {fileID: 916455862}
   - {fileID: 2078380866}
   - {fileID: 281422278}

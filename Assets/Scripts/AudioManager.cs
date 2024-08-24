@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class AudioManager : MonoBehaviour
     [Header("--------Audio Source--------")]
     [SerializeField] public AudioSource musicSource;
     [SerializeField] public AudioSource sfxSource;
+    [SerializeField] public AudioSource ttsSource;
 
     [Header("--------Audio Clip--------")]
     public AudioClip menu;
@@ -52,6 +54,16 @@ public class AudioManager : MonoBehaviour
     }
     public void ToggleSFX()
     {
-        sfxSource.mute = !sfxSource.mute;
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+
+        if (currentSceneName == "menuSinestesia")
+        {
+            sfxSource.mute = !sfxSource.mute;
+        }
+        else
+        {
+            ttsSource.mute = !ttsSource.mute;
+        }
     }
 }

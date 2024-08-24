@@ -30,7 +30,6 @@ public class PhaseSystem : MonoBehaviour
 
     public string musicaCorreta;
 
-
     public PhaseState state;
 
     // Start is called before the first frame update
@@ -103,7 +102,8 @@ public class PhaseSystem : MonoBehaviour
 
     public void sairParaMenu()
     {
-    SceneManager.LoadScene("menuSinestesia");
+        SceneManager.LoadScene("menuSinestesia");
+        AudioManager.instance.musicSource.Play();
     }
 
 }

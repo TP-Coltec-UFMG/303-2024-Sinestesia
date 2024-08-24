@@ -6,7 +6,12 @@ public class PlayAudioOnSelect : MonoBehaviour, ISelectHandler
 {
     public void OnSelect(BaseEventData eventData)
     {
-        // Verifica qual botão foi selecionado e reproduz o áudio correspondente
+        if (AudioManager.instance.sfxSource != null && AudioManager.instance.sfxSource.isPlaying)
+        {
+            AudioManager.instance.sfxSource.Stop();
+        }
+
+        // Verifica qual botao foi selecionado e reproduz o audio correspondente
         switch (gameObject.name)
         {
             case "jogarButton":
