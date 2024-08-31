@@ -100,6 +100,11 @@ public class PhaseSystem : MonoBehaviour
         }
     }
 
+    public void AbrirMenuSinestesia()
+    {
+        SceneManager.LoadScene("menuSinestesia", LoadSceneMode.Additive);
+    }
+
     public void sairParaMenu()
     {
         SceneManager.LoadScene("menuSinestesia");
