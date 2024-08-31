@@ -6,16 +6,17 @@ using UnityEngine.Networking;
 
 public class CrossPlatformTTS : MonoBehaviour
 {
-    public string language = "pt";
     private string espeakPath;
 
     void Start()
     {
         #if UNITY_STANDALONE_WIN
             espeakPath = Path.Combine(Application.dataPath, "Plugins/eSpeakNG/Windows/eSpeak NG/espeak-ng.exe");
-        #elif UNITY_STANDALONE_LINUX
+#elif UNITY_STANDALONE_LINUX
             espeakPath = Path.Combine(Application.dataPath, "Plugins/eSpeakNG/Linux/espeak-ng");
-        #endif
+#endif
+
+        InvokeRepeating("ClearCache", 0f, 20f);
     }
 
     public void PlaySpeech(string text)
@@ -27,11 +28,8 @@ public class CrossPlatformTTS : MonoBehaviour
     {
         string fileName = text.GetHashCode() + ".wav";
         string filePath = Path.Combine(Application.persistentDataPath, fileName);
-
-        if (!File.Exists(filePath))
-        {
-            GenerateSpeechFile(text, filePath);
-        }
+        
+        GenerateSpeechFile(text, filePath);
 
         // Usando UnityWebRequest para carregar o arquivo de áudio
         using (UnityWebRequest www = UnityWebRequestMultimedia.GetAudioClip("file://" + filePath, AudioType.WAV))
@@ -54,7 +52,7 @@ public class CrossPlatformTTS : MonoBehaviour
     {
         Process process = new Process();
         process.StartInfo.FileName = espeakPath;
-        process.StartInfo.Arguments = $"-v {language} -w \"{filePath}\" \"{text}\"";
+        process.StartInfo.Arguments = $"-v pt-br -s 200 -p 60 -w \"{filePath}\" \"{text}\"";
         process.StartInfo.RedirectStandardOutput = true;
         process.StartInfo.UseShellExecute = false;
         process.StartInfo.CreateNoWindow = true;
@@ -68,4 +66,25 @@ public class CrossPlatformTTS : MonoBehaviour
         audioSource.clip = clip;
         audioSource.Play();
     }
+
+    public void ClearCache()
+    {
+        string[] audioFiles = Directory.GetFiles(Application.persistentDataPath, "*.wav");
+
+        // Exclui todos os arquivos .wav encontrados
+        foreach (string file in audioFiles)
+        {
+            if (File.Exists(file))
+            {
+                File.Delete(file);
+            }
+        }
+        UnityEngine.Debug.Log("Arquivos de áudio excluídos");
+    }
+    void OnApplicationQuit()
+    {
+        CancelInvoke("ClearCache");
+        ClearCache();
+    }
+
 }

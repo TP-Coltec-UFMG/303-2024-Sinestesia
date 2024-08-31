@@ -840,7 +840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: Aperte enter para plateia
 --- !u!1 &279837710
 GameObject:
@@ -1492,7 +1492,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para ouvir a fala da terceira pessoa.
 --- !u!1 &393822310
 GameObject:
@@ -2046,7 +2046,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para ouvir a fala da segunda pessoa
 --- !u!1 &582765767
 GameObject:
@@ -2116,6 +2116,18 @@ MonoBehaviour:
       - m_Target: {fileID: 582765772}
         m_TargetAssemblyTypeName: PlayAudioOnClick, Assembly-CSharp
         m_MethodName: musicClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: PlayingMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2208,7 +2220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para tocar pop triste
 --- !u!1 &583900484
 GameObject:
@@ -2392,7 +2404,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para sair
 --- !u!1 &639979938
 GameObject:
@@ -2616,7 +2628,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para voltar ao painel principal
 --- !u!1 &713562850
 GameObject:
@@ -2829,6 +2841,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: PlayingMusic
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &757741669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2912,7 +2936,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para tocar pop raivoso
 --- !u!1 &771313340
 GameObject:
@@ -3060,7 +3084,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para voltar ao painel principal
 --- !u!1 &885315613
 GameObject:
@@ -3130,6 +3154,18 @@ MonoBehaviour:
       - m_Target: {fileID: 885315618}
         m_TargetAssemblyTypeName: PlayAudioOnClick, Assembly-CSharp
         m_MethodName: musicClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: PlayingMusic
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3222,7 +3258,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para tocar pop feliz
 --- !u!1 &916455859
 GameObject:
@@ -4114,7 +4150,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: Aperte enter para tocar
 --- !u!1 &1422212285
 GameObject:
@@ -4608,7 +4644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1758786444
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4904,7 +4940,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: Aperte enter para ouvir fala da primeira pessoa
 --- !u!1 &1954074760
 GameObject:
@@ -5261,7 +5297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: "aperte enter para abrir as op\xE7\xF5es"
 --- !u!1 &2063227638
 GameObject:
@@ -5455,7 +5491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tts: {fileID: 2074362365}
+  tts: {fileID: 2074362367}
   textToSpeak: aperte enter para ouvir a fala da quarta pessoa
 --- !u!1 &2074362364
 GameObject:
@@ -5466,7 +5502,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2074362366}
-  - component: {fileID: 2074362365}
+  - component: {fileID: 2074362367}
   m_Layer: 0
   m_Name: TTS
   m_TagString: Untagged
@@ -5474,19 +5510,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2074362365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2074362364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3451cf4c452bd0342a5c134979549316, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  language: pt
 --- !u!4 &2074362366
 Transform:
   m_ObjectHideFlags: 0
@@ -5502,6 +5525,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2074362367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2074362364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3451cf4c452bd0342a5c134979549316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2078380863
 GameObject:
   m_ObjectHideFlags: 0
