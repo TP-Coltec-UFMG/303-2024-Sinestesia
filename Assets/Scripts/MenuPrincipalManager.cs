@@ -11,7 +11,16 @@ public class MenuPrincipalManager : MonoBehaviour
     [SerializeField] private GameObject painelOpcoes;
     [SerializeField] private GameObject opcoesAbertoBotao, opcoesFechadoBotao;
 
-    public void Jogar(){
+    public void Start()
+    {
+        if (SceneManager.GetSceneByName("Fase1").isLoaded)
+        {
+            AbrirOpcoes();
+        }
+    }
+
+    public void Jogar()
+    {
     AudioManager.instance.musicSource.Stop();
     SceneManager.LoadScene("Intro");
    }
@@ -45,7 +54,7 @@ public class MenuPrincipalManager : MonoBehaviour
 
     public void FecharMenuSinestesia()
     {
-        // Descarrega a cena "menuSinestesia" e retorna à fase original
+        // Descarrega a cena "menuSinestesia" e retorna ï¿½ fase original
         SceneManager.UnloadSceneAsync("menuSinestesia");
     }
 }
