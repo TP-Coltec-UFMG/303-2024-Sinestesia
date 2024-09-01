@@ -42,4 +42,10 @@ public class MenuPrincipalManager : MonoBehaviour
         Debug.Log("Sair do jogo");
         Application.Quit();
     }
+
+    public void FecharMenuSinestesia()
+    {
+        // Descarrega a cena "menuSinestesia" e retorna à fase original
+        SceneManager.UnloadSceneAsync("menuSinestesia");
+    }
 }
