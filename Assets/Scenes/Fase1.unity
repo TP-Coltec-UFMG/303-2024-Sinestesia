@@ -3409,7 +3409,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: djdk
+  m_text: 'Agrado:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -4999,7 +4999,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pontos
+  m_text: 'Pontos:'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
