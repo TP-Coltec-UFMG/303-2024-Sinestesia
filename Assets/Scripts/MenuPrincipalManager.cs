@@ -16,6 +16,7 @@ public class MenuPrincipalManager : MonoBehaviour
         if (SceneManager.GetSceneByName("Fase1").isLoaded)
         {
             AbrirOpcoes();
+            //Aberração para abrir o menu de opções durante a fase
         }
     }
 
@@ -43,6 +44,7 @@ public class MenuPrincipalManager : MonoBehaviour
         if (SceneManager.GetSceneByName("Fase1").isLoaded)
         {
             SceneManager.UnloadSceneAsync("menuSinestesia");
+            //Aberração para fechar o menu de opções durante a fase
         }
     }
 

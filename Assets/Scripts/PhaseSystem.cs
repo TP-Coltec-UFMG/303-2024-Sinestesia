@@ -159,6 +159,7 @@ public class PhaseSystem : MonoBehaviour
     public void AbrirMenuSinestesia()
     {
         SceneManager.LoadScene("menuSinestesia", LoadSceneMode.Additive);
+        //Aberração para abrir o menu de opções
     }
 
     public void sairParaMenu()
