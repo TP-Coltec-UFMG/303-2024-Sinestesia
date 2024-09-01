@@ -1,10 +1,40 @@
-# 303-2024-Sinestesia
-Sinestesia
-Menu: Jogar, opções e sair.\
-![alt text](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/menuInicial.jpeg)\
-Opções: contém volume (da música), efeitos sonoros, sensibilidade, legendas e audiodescrição.\
-![alt text](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/opcoesMenuInicial.jpeg)\
-Audiodescrição: descreve os botões e opções selecionados por áudio.
-Navegação no menu por meio de setas, WASD e ponteiro do mouse.
-![alt text](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/Painel_fase_1.jpeg)\
-Painel da fase 1 do jogo.
+<h1 align="center">Sinestesia</h1>
+
+## História
+
+O Músico, um homem cego de nasçenca e que possui as suas raízes no interior, decide ir para a cidade e tocar em um bar com um nome bem característico: **Sinestesia!**
+
+## Jogabilidade
+
+O jogo é baseado em escolhas, em que o jogador precisa analisar as falas da plateia para conseguir tocar a música que fica mais *harmônica* com os sentimentos da plateia. Quanto menos a plateia consultar, mais pontos o jogador vai ganhar!
+
+## Menu inicial  
+
+![alt text](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/painel_menu_inicial.png)
+
+- Botões para jogar, opções e sair:
+    - Jogar: o jogador é redirecionado à introdução/tutorial do jogo e, logo após, começa a primeira fase;
+    - Opções: temos a opção de audiodescrição, em que o jogador irá ouvir todas as opções que foram selecionadas, a fim de proporcionar mais acessibilidade às pessoas com deficiência visual, opções de alterar o volume da música e dos efeitos sonoros (que inclui o volume da audiodescrição) e a opção de ativar ou desativar as legendas;  
+![alt text](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/opcoesMenuInicial.jpeg)  
+    - Sair: o jogo é fechado.  
+
+## Introdução
+
+---
+Uma pequena introdução ao jogador, contando a história e a mecânica de jogabilidade do jogo.  
+
+![Introducao](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/intro.png)
+
+## Fases
+
+---
+Opções de "tocar", "plateia", "opções" e "sair".  
+Tocar:  
+![tocar](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/faseTocar.png)  
+![tocar em ação](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/faseTocar2.png)  
+
+Plateia:  
+![plateia](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/fasePlateia.png)  
+
+Opções:  
+![opções](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/opcoesMenuInicial.jpeg)    
