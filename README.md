@@ -1,4 +1,5 @@
 <h1 align="center">Sinestesia</h1>
+---
 
 ## História
 
@@ -7,14 +8,13 @@ O Músico, um homem cego de nasçenca e que possui as suas raízes no interior, 
 ## Jogabilidade
 
 ---
-
 O jogo é baseado em escolhas, em que o jogador precisa analisar as falas da plateia para conseguir tocar a música que fica mais *harmônica* com os sentimentos da plateia. Quanto menos a plateia consultar, mais pontos o jogador vai ganhar!
 
 ## Menu inicial
 
----
+---  
 
-![alt text](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/menuInicial.jpeg)\
+![alt text](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/painel_menu_inicial.png)\
 
 - Botões para jogar, opções e sair:
     - Jogar: o jogador é redirecionado à introdução/tutorial do jogo e, logo após, começa a primeira fase;
@@ -25,18 +25,20 @@ O jogo é baseado em escolhas, em que o jogador precisa analisar as falas da pla
 ## Introdução
 
 ---
+Uma pequena introdução ao jogador, contando a história e a mecânica de jogabilidade do jogo.  
 
-Uma pequena introdução ao jogador, contando a história e a mecânica de jogabilidade do jogo.
+![Introducao](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/intro.png)\
 
 ## Fases
 
 ---
-
 Opções de "tocar", "plateia", "opções" e "sair".  
 Tocar:  
+![tocar](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/faseTocar.png)\
+![tocar em ação](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/faseTocar2.png)\
 
-Plateia:    
+Plateia:  
+![plateia](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/fasePlateia.png)\
 
-Opções:    
-
-Sair:  
+Opções:  
+![opções](https://github.com/TP-Coltec-UFMG/303-2024-Sinestesia/blob/main/opcoesMenuInicial.jpeg)\  
