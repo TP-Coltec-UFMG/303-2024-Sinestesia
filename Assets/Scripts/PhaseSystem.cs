@@ -22,6 +22,7 @@ public class PhaseSystem : MonoBehaviour
     public GameObject painelPrincipal;
     public GameObject painelMusicasTocar;
     public GameObject painelPlateia;
+    public GameObject painelMusical;
 
     public GameObject botaoPlateiaSelecionado;
     public GameObject botaoTocarSelecionado;
@@ -48,13 +49,16 @@ public class PhaseSystem : MonoBehaviour
         //verifica se a m�sica ou o �udio gravado terminou de tocar
         if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying)
         {
-            painelMusicasTocar.SetActive(true);
+            painelPrincipal.SetActive(true);
+            painelMusical.SetActive(false);
             isPlayingMusic = false;
+            EventSystem.current.SetSelectedGameObject(botaoSairDeTocar);
         }
 
         if (isPlayingSpeech && !AudioManager.instance.sfxSource.isPlaying)
         {
-            painelMusicasTocar.SetActive(true);
+            painelPrincipal.SetActive(true);
+            painelMusical.SetActive(false);
             isPlayingMusic = false;
         }
     }
@@ -65,6 +69,7 @@ public class PhaseSystem : MonoBehaviour
         if (!isPlayingMusic)
         {
             painelMusicasTocar.SetActive(false);
+            painelMusical.SetActive(true);
             isPlayingMusic = true;
         }
     }
@@ -74,6 +79,7 @@ public class PhaseSystem : MonoBehaviour
         if (!isPlayingSpeech)
         {
             painelPlateia.SetActive(false);
+            painelMusical.SetActive(true);
             isPlayingSpeech = true;
         }
     }
@@ -83,15 +89,18 @@ public class PhaseSystem : MonoBehaviour
     {
         var currentScene = SceneManager.GetActiveScene();
         var currentSceneName = currentScene.name;
+
+        Debug.Log(currentSceneName);
+
         if (currentSceneName == "Fase1")
         {
-            musicaCorreta = "PopFelizButton";
+            musicaCorreta = "popFelizButton";
         } else if (currentSceneName == "Fase2")
         {
-            musicaCorreta = "PopTristeButton";
+            musicaCorreta = "popTristeButton";
         } else if(currentSceneName == "Fase3")
         {
-            musicaCorreta = "PopRaivosoButton";
+            musicaCorreta = "popRaivosoButton";
         }
     }
 
@@ -131,14 +140,19 @@ public class PhaseSystem : MonoBehaviour
     //l�gica do sistema de pontua��o e de agrado da plateia
     public void pointsSystem(GameObject botao)
     {
-        botaoClicado = botao;
-        if (botaoClicado.name == musicaCorreta)
+        var nome = botao.name;
+        Debug.Log(nome);
+        if (nome == musicaCorreta)
         {
-            player.pontos = Convert.ToInt32(player.pontos + (10 / player.consultaPlateia));
+            player.pontos = Convert.ToInt32(player.pontos + (10 / (player.consultaPlateia + 1)));
             crowd.agrado = 10;
+            pointsHUD.pointsText.text = "Pontos: " + player.pontos;
+            agradoHUD.agradoText.text = "Agrado: " + crowd.agrado;
         } else {
-            player.pontos = Convert.ToInt32(player.pontos - 5 + (10 / player.consultaPlateia));
+            player.pontos = Convert.ToInt32(player.pontos - 10 + (5 / (player.consultaPlateia + 1)));
             crowd.agrado -= 2;
+            pointsHUD.pointsText.text = "Pontos: " + player.pontos;
+            agradoHUD.agradoText.text = "Agrado: " + crowd.agrado;
         }
     }
 
