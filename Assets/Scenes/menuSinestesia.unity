@@ -2633,6 +2633,14 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: e1f9ecc47bff9bd41929b69066e56242, type: 3}
   - name: falaIntro3
     clip: {fileID: 8300000, guid: 65bbf3edee7aabe40ab7a9f18ec3428f, type: 3}
+  - name: vovoFeliz
+    clip: {fileID: 8300000, guid: 5065f5ee5cbaf0e48b1bd584a2bbec05, type: 3}
+  - name: jessieFeliz
+    clip: {fileID: 8300000, guid: aa74ebc895baaab42a188a6b4f4d4e1e, type: 3}
+  - name: explorerFeliz
+    clip: {fileID: 8300000, guid: a0defa8f34f67db498f2ed03aa9ca80f, type: 3}
+  - name: deepFeliz
+    clip: {fileID: 8300000, guid: fea7b0e67140e324fa26bb4cd444798d, type: 3}
   musicSource: {fileID: 1448935846}
   sfxSource: {fileID: 2041319667}
   ttsSource: {fileID: 545402340}

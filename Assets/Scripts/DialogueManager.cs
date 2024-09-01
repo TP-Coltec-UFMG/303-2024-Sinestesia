@@ -12,8 +12,6 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<string> sentences;
 
-    public AudioClip[] dialogueClips;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -22,6 +20,9 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue (Dialogue dialogue)
     {
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+
         nameText.text = dialogue.name;
 
         sentences.Clear();
@@ -36,6 +37,11 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        var currentScene = SceneManager.GetActiveScene();
+        var currentSceneName = currentScene.name;
+
+        Debug.Log("A cena atual é: " + currentSceneName);
+
         if (sentences.Count == 0) 
         {
             EndDialogue();
@@ -47,19 +53,43 @@ public class DialogueManager : MonoBehaviour
             AudioManager.instance.sfxSource.Stop();
         }
 
-        if (sentences.Count == 3)
+        if (currentSceneName == "Intro")
         {
-            AudioManager.instance.PlaySFX("falaIntro1");
+            switch (sentences.Count)
+            {
+                case 3:
+                    AudioManager.instance.PlaySFX("falaIntro1");
+                    break;
+                case 2:
+                    AudioManager.instance.PlaySFX("falaIntro2");
+                    break;
+                case 1:
+                    AudioManager.instance.PlaySFX("falaIntro3");
+                    break;
+                default:
+                    break;
+            } 
         }
 
-        else if (sentences.Count == 2)
+        if (currentSceneName == "Fase1")
         {
-            AudioManager.instance.PlaySFX("falaIntro2");
-        }
-
-        else if (sentences.Count == 1)
-        {
-            AudioManager.instance.PlaySFX("falaIntro3");
+            switch (nameText.text)
+            {
+                case "vovo":
+                    AudioManager.instance.PlaySFX("vovoFeliz");
+                    break;
+                case "jessie":
+                    AudioManager.instance.PlaySFX("jessieFeliz");
+                    break;
+                case "explorer":
+                    AudioManager.instance.PlaySFX("explorerFeliz");
+                    break;
+                case "deep":
+                    AudioManager.instance.PlaySFX("deepFeliz");
+                    break;
+                default:
+                    break;
+            }
         }
 
         Debug.Log(sentences.Count);
@@ -79,18 +109,6 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    public AudioClip GetAudioClip(int index)
-    {
-        if (index >= 0 && index < dialogueClips.Length)
-        {
-            return dialogueClips[index];
-        }
-        else
-        {
-            Debug.LogWarning("Índice de áudio inválido!");
-            return null;
-        }
-    }
     void EndDialogue()
     {
         Debug.Log("End of conversation...");

@@ -14,7 +14,8 @@ public class PhaseSystem : MonoBehaviour
     public PointsHUD pointsHUD;
     public AgradoHUD agradoHUD;
 
-    public TMP_Text dialogText;
+    public TMP_Text dialogueText;
+    public TMP_Text nameText;
 
     public Musician player;
     public Crowd crowd;
@@ -23,6 +24,7 @@ public class PhaseSystem : MonoBehaviour
     public GameObject painelMusicasTocar;
     public GameObject painelPlateia;
     public GameObject painelMusical;
+    public GameObject painelBotoes;
 
     public GameObject botaoPlateiaSelecionado;
     public GameObject botaoTocarSelecionado;
@@ -46,20 +48,29 @@ public class PhaseSystem : MonoBehaviour
 
     private void Update()
     {
-        //verifica se a m�sica ou o �udio gravado terminou de tocar
+        // verifica se a m�sica ou o �udio gravado terminou de tocar
         if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying)
         {
             painelPrincipal.SetActive(true);
             painelMusical.SetActive(false);
             isPlayingMusic = false;
+
+            dialogueText.text = "O que será que eu vou tocar hoje?";
+            nameText.text = "Eu:";
+
             EventSystem.current.SetSelectedGameObject(botaoSairDeTocar);
         }
 
         if (isPlayingSpeech && !AudioManager.instance.sfxSource.isPlaying)
         {
             painelPrincipal.SetActive(true);
-            painelMusical.SetActive(false);
-            isPlayingMusic = false;
+            painelBotoes.SetActive(true);
+            isPlayingSpeech = false;
+
+            dialogueText.text = "O que será que eu vou tocar hoje?";
+            nameText.text = "Eu:";
+
+            EventSystem.current.SetSelectedGameObject(botaoSairDeTocar);
         }
     }
 
@@ -79,7 +90,8 @@ public class PhaseSystem : MonoBehaviour
         if (!isPlayingSpeech)
         {
             painelPlateia.SetActive(false);
-            painelMusical.SetActive(true);
+            painelPrincipal.SetActive(true);
+            painelBotoes.SetActive(false);
             isPlayingSpeech = true;
         }
     }
@@ -106,7 +118,8 @@ public class PhaseSystem : MonoBehaviour
 
     void SetupNight()
     {
-        dialogText.text = "O que vamos tocar hoje?";
+        dialogueText.text = "O que será que eu vou tocar hoje?";
+        nameText.text = "Eu:";
 
         pointsHUD.SetHUD(player);
         agradoHUD.SetHUD(crowd);
@@ -153,6 +166,18 @@ public class PhaseSystem : MonoBehaviour
             crowd.agrado -= 2;
             pointsHUD.pointsText.text = "Pontos: " + player.pontos;
             agradoHUD.agradoText.text = "Agrado: " + crowd.agrado;
+        }
+    }
+
+    // Calcula quantas consultas à plateia o jogador fez, interferindo na pontuação do jogador
+    public void ConsultaSystem(GameObject botao)
+    {
+        var nome = botao.name;
+
+        if (nome == "firstPersonButton" || nome == "secondPersonButton" || nome == "thirdPersonButton" || nome == "fourthPersonButton")
+        {
+            player.consultaPlateia++;
+            Debug.Log("Consultas da plateia: " + player.consultaPlateia);
         }
     }
 

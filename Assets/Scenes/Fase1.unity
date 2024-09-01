@@ -198,6 +198,59 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 11754679}
   m_CullTransparentMesh: 1
+--- !u!1 &15648881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 15648882}
+  - component: {fileID: 15648883}
+  m_Layer: 5
+  m_Name: jessie
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &15648882
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15648881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1758786444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &15648883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15648881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8385000b3074d3b4083bf7c3a9a85b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: jessie
+    sentences:
+    - "Espero que ele se mostre uma pessoa otimista e en\xE9rgica, igual os outros
+      moradores da cidade!"
 --- !u!1 &20764924
 GameObject:
   m_ObjectHideFlags: 0
@@ -255,7 +308,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pessoa 2
+  m_text: 'Jessie
 
 '
   m_isRightToLeft: 0
@@ -6127,9 +6180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pessoa 1
-
-'
+  m_text: "Vov\xF3\n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -6269,7 +6320,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 371123759}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1987032737}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: ConsultaSystem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 371123757}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: PlayingSpeech
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &371123759
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6341,7 +6428,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 2074362367}
-  textToSpeak: aperte enter para ouvir a fala da terceira pessoa.
+  textToSpeak: aperte enter para ouvir a fala de explorer
 --- !u!1 &393822310
 GameObject:
   m_ObjectHideFlags: 0
@@ -6810,7 +6897,7 @@ Camera:
     height: 1
   near clip plane: 0.3
   far clip plane: 1000
-  field of view: 60
+  field of view: 56.3
   orthographic: 0
   orthographic size: 5
   m_Depth: 0
@@ -6906,7 +6993,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 512395085}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 15648883}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: ConsultaSystem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 512395083}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: PlayingSpeech
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &512395085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6978,7 +7101,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 2074362367}
-  textToSpeak: aperte enter para ouvir a fala da segunda pessoa
+  textToSpeak: "aperte enter para ouvir a fala de dj\xE9ci"
 --- !u!1 &582765767
 GameObject:
   m_ObjectHideFlags: 0
@@ -7206,6 +7329,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1196035812}
+  - {fileID: 980311717}
   m_Father: {fileID: 1702728161}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7642,7 +7766,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Pessoa 4
+  m_text: Deep
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -8263,6 +8387,59 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   tts: {fileID: 2074362367}
   textToSpeak: aperte enter para tocar pop feliz
+--- !u!1 &912293541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 912293542}
+  - component: {fileID: 912293543}
+  m_Layer: 5
+  m_Name: deep
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &912293542
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912293541}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1758786444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &912293543
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912293541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8385000b3074d3b4083bf7c3a9a85b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: deep
+    sentences:
+    - Hoje, a noite vai ser animada. Vamos comemorar a chegada de nosso novo vizinho.
+      '_'
 --- !u!1 &916455859
 GameObject:
   m_ObjectHideFlags: 0
@@ -8528,6 +8705,140 @@ RectTransform:
   m_AnchoredPosition: {x: 675, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &980311716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 980311717}
+  - component: {fileID: 980311719}
+  - component: {fileID: 980311718}
+  m_Layer: 5
+  m_Name: NameText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &980311717
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980311716}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 583900485}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -562.5114, y: 74}
+  m_SizeDelta: {x: 751.689, y: 85.246}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &980311718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980311716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Eu: '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
+  m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 72
+  m_fontSizeBase: 72
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &980311719
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 980311716}
+  m_CullTransparentMesh: 1
 --- !u!1 &1066733250
 GameObject:
   m_ObjectHideFlags: 0
@@ -8637,8 +8948,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -228, y: 17}
-  m_SizeDelta: {x: 1420.7117, y: 100}
+  m_AnchoredPosition: {x: -142.634, y: -0.00011253}
+  m_SizeDelta: {x: 1591.442, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1196035813
 MonoBehaviour:
@@ -8660,7 +8971,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "O que voc\xEA ir\xE1 tocar hoje?"
+  m_text: "O que ser\xE1 que eu vou tocar hoje?"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -8687,8 +8998,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 72
-  m_fontSizeBase: 72
+  m_fontSize: 48
+  m_fontSizeBase: 48
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -8737,6 +9048,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1196035811}
   m_CullTransparentMesh: 1
+--- !u!1 &1202306010
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1202306012}
+  - component: {fileID: 1202306011}
+  m_Layer: 0
+  m_Name: DialogueManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1202306011
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202306010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 206509b5dc9e8864f933736d6ac480cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nameText: {fileID: 980311718}
+  dialogueText: {fileID: 1196035813}
+--- !u!4 &1202306012
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1202306010}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1007.06647, y: 528.2669, z: -0.635739}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1223365805
 GameObject:
   m_ObjectHideFlags: 0
@@ -9003,9 +9360,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pessoa 3
-
-'
+  m_text: Explorer
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -9722,7 +10077,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1758786444
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9734,7 +10089,11 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1810870085}
+  - {fileID: 15648882}
+  - {fileID: 1987032736}
+  - {fileID: 912293542}
   m_Father: {fileID: 281422278}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -9884,6 +10243,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agradoText: {fileID: 921233952}
+--- !u!1 &1810870084
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1810870085}
+  - component: {fileID: 1810870086}
+  m_Layer: 5
+  m_Name: vovo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1810870085
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810870084}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1758786444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1810870086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810870084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8385000b3074d3b4083bf7c3a9a85b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: vovo
+    sentences:
+    - "Fiquei sabendo que um novo m\xFAsico cantar\xE1 no bar hoje. Finalmente, h\xE1
+      anos o bar estava parado e silencioso...  "
 --- !u!1 &1815587424
 GameObject:
   m_ObjectHideFlags: 0
@@ -9947,7 +10359,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1815587426}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1810870086}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: ConsultaSystem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1815587424}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: PlayingSpeech
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1815587426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10019,7 +10467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 2074362367}
-  textToSpeak: Aperte enter para ouvir fala da primeira pessoa
+  textToSpeak: "Aperte enter para ouvir fala de vov\xF3"
 --- !u!1 &1954074760
 GameObject:
   m_ObjectHideFlags: 0
@@ -10154,6 +10602,58 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1954074760}
   m_CullTransparentMesh: 1
+--- !u!1 &1987032735
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1987032736}
+  - component: {fileID: 1987032737}
+  m_Layer: 5
+  m_Name: explorer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1987032736
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987032735}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1758786444}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1987032737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987032735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8385000b3074d3b4083bf7c3a9a85b89, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+    name: explorer
+    sentences:
+    - "Tomara que ele toque uma linda can\xE7\xE3o! Com uma batida animada e dan\xE7ante!!"
 --- !u!1 &2039540077
 GameObject:
   m_ObjectHideFlags: 0
@@ -10408,13 +10908,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pointsHUD: {fileID: 95513607}
   agradoHUD: {fileID: 1810741952}
-  dialogText: {fileID: 1196035813}
+  dialogueText: {fileID: 1196035813}
+  nameText: {fileID: 980311718}
   player: {fileID: 1422212287}
   crowd: {fileID: 1758786445}
   painelPrincipal: {fileID: 1702728160}
   painelMusicasTocar: {fileID: 639979938}
   painelPlateia: {fileID: 11754679}
   painelMusical: {fileID: 1066733250}
+  painelBotoes: {fileID: 926379820}
   botaoPlateiaSelecionado: {fileID: 1815587424}
   botaoTocarSelecionado: {fileID: 885315613}
   botaoSairDeTocar: {fileID: 1392350328}
@@ -10499,7 +11001,43 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2067651409}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 912293543}
+        m_TargetAssemblyTypeName: DialogueTrigger, Assembly-CSharp
+        m_MethodName: TriggerDialogue
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: ConsultaSystem
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 2067651407}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: PlayingSpeech
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2067651409
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10571,7 +11109,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tts: {fileID: 2074362367}
-  textToSpeak: aperte enter para ouvir a fala da quarta pessoa
+  textToSpeak: aperte enter para ouvir a fala de deep
 --- !u!1 &2074362364
 GameObject:
   m_ObjectHideFlags: 0
@@ -10740,6 +11278,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 2063227640}
   - {fileID: 2074362366}
+  - {fileID: 1202306012}
   - {fileID: 916455862}
   - {fileID: 469734401}
   - {fileID: 2078380866}
