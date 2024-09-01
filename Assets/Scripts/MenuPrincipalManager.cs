@@ -13,7 +13,7 @@ public class MenuPrincipalManager : MonoBehaviour{
 
     public void Jogar(){
     AudioManager.instance.musicSource.Stop();
-    SceneManager.LoadScene("Fase1");
+    SceneManager.LoadScene("Intro");
    }
 
    public void AbrirOpcoes(){
