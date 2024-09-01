@@ -30,8 +30,8 @@ public class PhaseSystem : MonoBehaviour
 
     public string musicaCorreta;
 
-    private bool isPlayingMusic = false; //verificar se a música está tocando
-    private bool isPlayingSpeech = false; //verificar se a fala da pessoa está sendo reproduzida
+    private bool isPlayingMusic = false; //verificar se a mï¿½sica estï¿½ tocando
+    private bool isPlayingSpeech = false; //verificar se a fala da pessoa estï¿½ sendo reproduzida
 
     public PhaseState state;
 
@@ -45,7 +45,7 @@ public class PhaseSystem : MonoBehaviour
 
     private void Update()
     {
-        //verifica se a música ou o áudio gravado terminou de tocar
+        //verifica se a mï¿½sica ou o ï¿½udio gravado terminou de tocar
         if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying)
         {
             painelMusicasTocar.SetActive(true);
@@ -59,7 +59,7 @@ public class PhaseSystem : MonoBehaviour
         }
     }
 
-    //métodos para ativar e desativar a "caixa" com as opções
+    //mï¿½todos para ativar e desativar a "caixa" com as opï¿½ï¿½es
     public void PlayingMusic()
     {
         if (!isPlayingMusic)
@@ -78,7 +78,7 @@ public class PhaseSystem : MonoBehaviour
         }
     }
 
-    //configura qual é a música tema correta de cada fase
+    //configura qual ï¿½ a mï¿½sica tema correta de cada fase
     void VerifyScene()
     {
         var currentScene = SceneManager.GetActiveScene();
@@ -128,9 +128,10 @@ public class PhaseSystem : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(botaoSairDeTocar);
     }
 
-    //lógica do sistema de pontuação e de agrado da plateia
-    public void pointsSystem()
+    //lï¿½gica do sistema de pontuaï¿½ï¿½o e de agrado da plateia
+    public void pointsSystem(GameObject botao)
     {
+        botaoClicado = botao;
         if (botaoClicado.name == musicaCorreta)
         {
             player.pontos = Convert.ToInt32(player.pontos + (10 / player.consultaPlateia));
@@ -139,6 +140,11 @@ public class PhaseSystem : MonoBehaviour
             player.pontos = Convert.ToInt32(player.pontos - 5 + (10 / player.consultaPlateia));
             crowd.agrado -= 2;
         }
+    }
+
+    public void AbrirMenuSinestesia()
+    {
+        SceneManager.LoadScene("menuSinestesia", LoadSceneMode.Additive);
     }
 
     public void sairParaMenu()
