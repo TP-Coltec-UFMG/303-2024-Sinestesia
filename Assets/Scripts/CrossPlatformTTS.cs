@@ -52,7 +52,7 @@ public class CrossPlatformTTS : MonoBehaviour
     {
         Process process = new Process();
         process.StartInfo.FileName = espeakPath;
-        process.StartInfo.Arguments = $"-v pt-br -s 200 -p 60 -w \"{filePath}\" \"{text}\"";
+        process.StartInfo.Arguments = $"-v pt-br -s 125 -p 90 -w \"{filePath}\" \"{text}\"";
         process.StartInfo.RedirectStandardOutput = true;
         process.StartInfo.UseShellExecute = false;
         process.StartInfo.CreateNoWindow = true;
