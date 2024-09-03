@@ -13,27 +13,16 @@ public class StoreManager : MonoBehaviour
     public void CalculaPontos()
     {
         var pontos = musico.pontos;
+
+        var total = Avancar();
+
         if (musico.pontos < 10)
         {
             messageText.text = "Não posso comprar nada... :(";
         }
-        else if (musico.pontos >= 10 && guitarra.isOn)
+        else if (total <= musico.pontos)
         {
-            pontos -= 10;
-            messageText.text = "Pontos: " + pontos;
-            pontos += 10;
-        }
-        else if (musico.pontos >= 12 && baixo.isOn)
-        {
-            pontos -= 12;
-            messageText.text = "Pontos: " + musico.pontos;
-            pontos += 12;
-        }
-        else if (musico.pontos >= 20 && bateria.isOn)
-        {
-            pontos -= 20;
-            messageText.text = "Pontos: " + pontos;
-            pontos += 20;
+            messageText.text = "Pontos: " + total;
         }
         else
         {
@@ -41,7 +30,7 @@ public class StoreManager : MonoBehaviour
         }
     }
 
-    public void Avancar()
+    public int Avancar()
     {
         var total = 0;
 
@@ -53,6 +42,8 @@ public class StoreManager : MonoBehaviour
             total += 20;
 
         Debug.Log("Total de pontos gastos: " + total);
+
+        return total;
     }
 
 }
