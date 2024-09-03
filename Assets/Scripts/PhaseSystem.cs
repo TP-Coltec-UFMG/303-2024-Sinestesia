@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 using System.Net.WebSockets;
 using System;
+using UnityEngine.UI;
 
 public enum PhaseState { START, PLAYERTURN, CROWDTURN, WIN, LOSS }
 
@@ -25,11 +26,13 @@ public class PhaseSystem : MonoBehaviour
     public GameObject painelPlateia;
     public GameObject painelMusical;
     public GameObject painelBotoes;
+    public GameObject painelOpcoes;
 
     public GameObject botaoPlateiaSelecionado;
     public GameObject botaoTocarSelecionado;
     public GameObject botaoSairDeTocar;
     public GameObject botaoClicado;
+    public GameObject toggleLegendas;
 
     public string musicaCorreta;
 
@@ -183,10 +186,21 @@ public class PhaseSystem : MonoBehaviour
 
     public void AbrirMenuSinestesia()
     {
-        SceneManager.LoadScene("menuSinestesia", LoadSceneMode.Additive);
+        painelOpcoes.SetActive(true);
+        EventSystem.current.SetSelectedGameObject(toggleLegendas); // botão selecionado quando abre o painel
         //Aberração para abrir o menu de opções
     }
 
+    public void FecharMenuSinestesia()
+    {
+        painelOpcoes.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(botaoSairDeTocar); //botão selecionado quando fecha o painel
+    }
+
+    public void AtivarAudiodescricao()
+    {
+        AudioManager.instance.ttsSource.mute = !AudioManager.instance.ttsSource.mute;
+    }
     public void sairParaMenu()
     {
         SceneManager.LoadScene("menuSinestesia");
