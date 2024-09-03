@@ -12,9 +12,9 @@ public class CrossPlatformTTS : MonoBehaviour
     {
         #if UNITY_STANDALONE_WIN
             espeakPath = Path.Combine(Application.dataPath, "Plugins/eSpeakNG/Windows/eSpeak NG/espeak-ng.exe");
-#elif UNITY_STANDALONE_LINUX
+        #elif UNITY_STANDALONE_LINUX
             espeakPath = Path.Combine(Application.dataPath, "Plugins/eSpeakNG/Linux/espeak-ng");
-#endif
+        #endif
 
         InvokeRepeating("ClearCache", 0f, 20f);
     }
