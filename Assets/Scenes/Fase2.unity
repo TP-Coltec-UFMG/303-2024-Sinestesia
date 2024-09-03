@@ -10544,7 +10544,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1223365806}
   - component: {fileID: 1223365808}
-  - component: {fileID: 1223365807}
+  - component: {fileID: 1223365809}
   m_Layer: 5
   m_Name: BackgroundImage
   m_TagString: Untagged
@@ -10571,7 +10571,15 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 102.57}
   m_SizeDelta: {x: 1920, y: 874.86}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1223365807
+--- !u!222 &1223365808
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223365805}
+  m_CullTransparentMesh: 1
+--- !u!114 &1223365809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10591,7 +10599,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7ece90802be101c4f81661a586f0a72d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0dd3c06ffd044b1428030d75050c3b70, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -10601,14 +10609,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!222 &1223365808
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1223365805}
-  m_CullTransparentMesh: 1
 --- !u!1 &1245781972
 GameObject:
   m_ObjectHideFlags: 0
