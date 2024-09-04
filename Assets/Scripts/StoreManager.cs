@@ -6,23 +6,30 @@ using TMPro;
 
 public class StoreManager : MonoBehaviour
 {
-    public Toggle guitarra, bateria, baixo;
-    public Musician musico;
+    public CrossPlatformTTS tts;
+    public Toggle guitarra, bateria, teclado;
     public TMP_Text messageText;
+
+    private void Start()
+    {
+        messageText.text = "Pontos do Músico: " + Musician.Musico.totalPontos;
+    }
 
     public void CalculaPontos()
     {
-        var pontos = musico.pontos;
+        var pontos = Musician.Musico.totalPontos;
 
         var total = Avancar();
 
-        if (musico.pontos < 10)
+        var diferenca = Musician.Musico.totalPontos - total;
+
+        if (Musician.Musico.totalPontos < 10)
         {
             messageText.text = "Não posso comprar nada... :(";
         }
-        else if (total <= musico.pontos)
+        else if (total <= Musician.Musico.totalPontos)
         {
-            messageText.text = "Pontos: " + total;
+            messageText.text = "Pontos do Músico: " + diferenca;
         }
         else
         {
@@ -36,7 +43,7 @@ public class StoreManager : MonoBehaviour
 
         if (guitarra.isOn)
             total += 10;
-        if (baixo.isOn)
+        if (teclado.isOn)
             total += 12;
         if (bateria.isOn)
             total += 20;
@@ -44,6 +51,18 @@ public class StoreManager : MonoBehaviour
         Debug.Log("Total de pontos gastos: " + total);
 
         return total;
+    }
+
+    public void FalarAoSelecionar (Toggle toggle)
+    {
+        if (toggle.isOn)
+        {
+            tts.PlaySpeech("Habilitado");
+        }
+        else
+        {
+            tts.PlaySpeech("Desabilitado");
+        }
     }
 
 }

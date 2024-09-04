@@ -179,7 +179,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Baixo el\xE9trico --------------- 12 pontos"
+  m_text: Teclado --------------- 12 pontos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -1127,6 +1127,66 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 779588609}
   m_CullTransparentMesh: 1
+--- !u!1 &791525359
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 791525362}
+  - component: {fileID: 791525360}
+  - component: {fileID: 791525361}
+  m_Layer: 0
+  m_Name: TTS
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &791525360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791525359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3451cf4c452bd0342a5c134979549316, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &791525361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791525359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9631df4b813cb4c478ea3e21b0f855d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 791525360}
+  player: {fileID: 0}
+  crowd: {fileID: 0}
+--- !u!4 &791525362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 791525359}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 880.9582, y: 503.68442, z: -8.106617}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &903892340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1270,6 +1330,7 @@ GameObject:
   m_Component:
   - component: {fileID: 919816772}
   - component: {fileID: 919816773}
+  - component: {fileID: 919816774}
   m_Layer: 5
   m_Name: Bateria
   m_TagString: Untagged
@@ -1358,7 +1419,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1011638397}
+        m_TargetAssemblyTypeName: StoreManager, Assembly-CSharp
+        m_MethodName: FalarAoSelecionar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 919816773}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &919816774
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 919816771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 791525360}
+  textToSpeak: bateria, custa 20 pontos
 --- !u!1 &1011638396
 GameObject:
   m_ObjectHideFlags: 0
@@ -1388,10 +1475,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28ab875fd31d22a4d80368c153dd1724, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  tts: {fileID: 791525360}
   guitarra: {fileID: 1554471193}
   bateria: {fileID: 919816773}
-  baixo: {fileID: 1616668023}
-  musico: {fileID: 1139014098}
+  teclado: {fileID: 1616668023}
   messageText: {fileID: 395630408}
 --- !u!4 &1011638398
 Transform:
@@ -1522,53 +1609,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1139014097
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1139014099}
-  - component: {fileID: 1139014098}
-  m_Layer: 0
-  m_Name: Musician
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1139014098
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139014097}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0ac0a3163944dc48a61dc6d1f30e9f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  consultaPlateia: 0
-  pontos: 30
-  totalPontos: 0
---- !u!4 &1139014099
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1139014097}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 872.7098, y: 582.9656, z: -8.2225685}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1221939156
 GameObject:
   m_ObjectHideFlags: 0
@@ -1944,6 +1984,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1554471192}
   - component: {fileID: 1554471193}
+  - component: {fileID: 1554471194}
   m_Layer: 5
   m_Name: Guitarra
   m_TagString: Untagged
@@ -2032,7 +2073,33 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1011638397}
+        m_TargetAssemblyTypeName: StoreManager, Assembly-CSharp
+        m_MethodName: FalarAoSelecionar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1554471193}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
+--- !u!114 &1554471194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554471191}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 791525360}
+  textToSpeak: Guitarra, custa 10 pontos
 --- !u!1 &1580939259
 GameObject:
   m_ObjectHideFlags: 0
@@ -2177,8 +2244,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1616668024}
   - component: {fileID: 1616668023}
+  - component: {fileID: 1616668025}
   m_Layer: 5
-  m_Name: Baixo
+  m_Name: Teclado
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2243,6 +2311,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1011638397}
+        m_TargetAssemblyTypeName: StoreManager, Assembly-CSharp
+        m_MethodName: FalarAoSelecionar
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1616668023}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.UI.Toggle, UnityEngine.UI
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_IsOn: 0
 --- !u!224 &1616668024
 RectTransform:
@@ -2266,6 +2346,20 @@ RectTransform:
   m_AnchoredPosition: {x: -478, y: -40}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1616668025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1616668022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396531689115d604f9eaebde64130ef1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tts: {fileID: 791525360}
+  textToSpeak: teclado, custa 12 pontos
 --- !u!1 &1732354335
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,7 +2753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Bateria ------------------------ 20 pontos
+  m_text: Bateria -------------- 20 pontos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -2793,7 +2887,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Guitarra ---------------------- 10 pontos
+  m_text: Guitarra ------------- 10 pontos
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -2968,7 +3062,7 @@ SceneRoots:
   m_Roots:
   - {fileID: 2116114946}
   - {fileID: 1011638398}
+  - {fileID: 791525362}
   - {fileID: 263115924}
   - {fileID: 1732354339}
   - {fileID: 667751569}
-  - {fileID: 1139014099}
