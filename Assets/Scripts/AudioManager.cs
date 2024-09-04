@@ -30,6 +30,14 @@ public class AudioManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if (ttsSource.isPlaying && sfxSource.isPlaying)
+        {
+            ttsSource.Stop();
+        }
+    }
+
     private void Start() {
         if (menu == null)
             return;

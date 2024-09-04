@@ -7,8 +7,8 @@ public class PointsHUD : MonoBehaviour
 {
     public TMP_Text pointsText;
 
-    public void SetHUD(Musician player)
+    public void SetHUD()
     {
-        pointsText.text = "Pontos: " + player.pontos;
+        pointsText.text = "Pontos: " + Musician.Musico.totalPontos;
     } 
 }

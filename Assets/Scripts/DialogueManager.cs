@@ -92,6 +92,27 @@ public class DialogueManager : MonoBehaviour
             }
         }
 
+        if (currentSceneName == "Fase4")
+        {
+            switch (nameText.text)
+            {
+                case "vovo":
+                    AudioManager.instance.PlaySFX("vovoTriste");
+                    break;
+                case "jessie":
+                    AudioManager.instance.PlaySFX("jessieTriste");
+                    break;
+                case "explorer":
+                    AudioManager.instance.PlaySFX("explorerTriste");
+                    break;
+                case "deep":
+                    AudioManager.instance.PlaySFX("deepTriste");
+                    break;
+                default:
+                    break;
+            }
+        }
+
         Debug.Log(sentences.Count);
 
         string sentence = sentences.Dequeue();
@@ -114,11 +135,11 @@ public class DialogueManager : MonoBehaviour
         Debug.Log("End of conversation...");
     }
 
-    public void NextScene()
+    public void NextScene(int index)
     {
         if (sentences.Count == 0 && !AudioManager.instance.sfxSource.isPlaying) 
         {
-            SceneManager.LoadScene("Fase1");
+            SceneManager.LoadScene(index + 1);
         }
     }
 }

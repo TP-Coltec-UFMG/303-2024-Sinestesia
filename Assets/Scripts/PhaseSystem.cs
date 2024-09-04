@@ -33,11 +33,13 @@ public class PhaseSystem : MonoBehaviour
     public GameObject botaoSairDeTocar;
     public GameObject botaoClicado;
     public GameObject toggleLegendas;
+    public GameObject botaoContinuar;
 
-    public string musicaCorreta;
+    private string musicaCorreta;
 
     private bool isPlayingMusic = false; //verificar se a m�sica est� tocando
     private bool isPlayingSpeech = false; //verificar se a fala da pessoa est� sendo reproduzida
+    private bool isMusic = false; // verificar se a musica tocada e a correta da fase
 
     public PhaseState state;
 
@@ -52,7 +54,7 @@ public class PhaseSystem : MonoBehaviour
     private void Update()
     {
         // verifica se a m�sica ou o �udio gravado terminou de tocar
-        if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying)
+        if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying && !isMusic)
         {
             painelPrincipal.SetActive(true);
             painelMusical.SetActive(false);
@@ -62,6 +64,21 @@ public class PhaseSystem : MonoBehaviour
             nameText.text = "Eu:";
 
             EventSystem.current.SetSelectedGameObject(botaoSairDeTocar);
+        }
+
+        if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying && isMusic)
+        {
+            painelPrincipal.SetActive(true);
+            painelMusical.SetActive(false);
+            painelBotoes.SetActive(false);
+            botaoContinuar.SetActive(true);    
+            isPlayingMusic = false;
+
+
+            dialogueText.text = "Agradei o público! Bora para a próxima noite!";
+            nameText.text = "Eu:";
+
+            EventSystem.current.SetSelectedGameObject(botaoContinuar);
         }
 
         if (isPlayingSpeech && !AudioManager.instance.sfxSource.isPlaying)
@@ -116,6 +133,9 @@ public class PhaseSystem : MonoBehaviour
         } else if(currentSceneName == "Fase3")
         {
             musicaCorreta = "popRaivosoButton";
+        } else if (currentSceneName == "Fase4")
+        {
+            musicaCorreta = "bluesTristeButton";
         }
     }
 
@@ -124,7 +144,7 @@ public class PhaseSystem : MonoBehaviour
         dialogueText.text = "O que será que eu vou tocar hoje?";
         nameText.text = "Eu:";
 
-        pointsHUD.SetHUD(player);
+        pointsHUD.SetHUD();
         agradoHUD.SetHUD(crowd);
     }
 
@@ -156,19 +176,33 @@ public class PhaseSystem : MonoBehaviour
     //l�gica do sistema de pontua��o e de agrado da plateia
     public void pointsSystem(GameObject botao)
     {
+        // criando uma unica instancia do personagem para nao resetar os pontos a cada fase
         var nome = botao.name;
-        Debug.Log(nome);
         if (nome == musicaCorreta)
         {
-            player.pontos = Convert.ToInt32(player.pontos + (10 / (player.consultaPlateia + 1)));
+            Musician.Musico.pontos = Convert.ToInt32(Musician.Musico.pontos + (20 / (Musician.Musico.consultaPlateia + 1)));
             crowd.agrado = 10;
-            pointsHUD.pointsText.text = "Pontos: " + player.pontos;
-            agradoHUD.agradoText.text = "Agrado: " + crowd.agrado;
+
+            Musician.Musico.totalPontos += Musician.Musico.pontos;
+
+            pointsHUD.pointsText.text = "Pontos: " + Musician.Musico.totalPontos;
+            agradoHUD.agradoText.text = "😀 Agrado: " + crowd.agrado;
+
+            Debug.Log(Musician.Musico.totalPontos);
         } else {
-            player.pontos = Convert.ToInt32(player.pontos - 10 + (5 / (player.consultaPlateia + 1)));
+            Musician.Musico.pontos = Convert.ToInt32(Musician.Musico.pontos - 5 + (5 / (Musician.Musico.consultaPlateia + 1)));
+
+            Musician.Musico.totalPontos += Musician.Musico.pontos;
+
+            if (Musician.Musico.pontos <= 0)
+            {
+                Musician.Musico.pontos = 0;
+            }
             crowd.agrado -= 2;
-            pointsHUD.pointsText.text = "Pontos: " + player.pontos;
-            agradoHUD.agradoText.text = "Agrado: " + crowd.agrado;
+            pointsHUD.pointsText.text = "Pontos: " + Musician.Musico.pontos;
+            agradoHUD.agradoText.text = "\U0001F614 Agrado: " + crowd.agrado;
+
+            Debug.Log(Musician.Musico.totalPontos);
         }
     }
 
@@ -179,8 +213,17 @@ public class PhaseSystem : MonoBehaviour
 
         if (nome == "firstPersonButton" || nome == "secondPersonButton" || nome == "thirdPersonButton" || nome == "fourthPersonButton")
         {
-            player.consultaPlateia++;
-            Debug.Log("Consultas da plateia: " + player.consultaPlateia);
+            Musician.Musico.consultaPlateia++;
+            Debug.Log("Consultas da plateia: " + Musician.Musico.consultaPlateia);
+        }
+    }
+
+    public void VerificaMusica(GameObject botao) 
+    {
+        var nome = botao.name;
+        if (nome == musicaCorreta) 
+        {
+            isMusic = true;
         }
     }
 
@@ -205,6 +248,13 @@ public class PhaseSystem : MonoBehaviour
     {
         SceneManager.LoadScene("menuSinestesia");
         AudioManager.instance.musicSource.Play();
+    }
+
+    public void ProximaCena(int index)
+    {
+        Debug.Log(index);
+
+        SceneManager.LoadScene(index + 1);
     }
 
 }

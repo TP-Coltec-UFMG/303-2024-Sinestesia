@@ -16,7 +16,7 @@ public class CrossPlatformTTS : MonoBehaviour
             espeakPath = Path.Combine(Application.dataPath, "Plugins/eSpeakNG/Linux/espeak-ng");
         #endif
 
-        InvokeRepeating("ClearCache", 0f, 20f);
+        InvokeRepeating("ClearCache", 0f, 8f);
     }
 
     public void PlaySpeech(string text)

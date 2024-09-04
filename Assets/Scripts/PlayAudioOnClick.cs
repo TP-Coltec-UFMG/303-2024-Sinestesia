@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayAudioOnClick : MonoBehaviour
@@ -21,6 +22,15 @@ public class PlayAudioOnClick : MonoBehaviour
                 break;
             case "popRaivosoButton":
                 AudioManager.instance.PlaySFX("popRaivosoClip");
+                break;
+            case "bluesFelizButton":
+                AudioManager.instance.PlaySFX("popRaivosoLClip");
+                break;
+            case "bluesRaivosoButton":
+                AudioManager.instance.PlaySFX("bluesRaivosoClip");
+                break;
+            case "bluesTristeButton":
+                AudioManager.instance.PlaySFX("bluesTristeClip");
                 break;
         }
     }
