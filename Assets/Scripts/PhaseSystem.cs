@@ -27,6 +27,8 @@ public class PhaseSystem : MonoBehaviour
     public GameObject painelMusical;
     public GameObject painelBotoes;
     public GameObject painelOpcoes;
+    public GameObject painelFim_fase;
+
 
     public GameObject botaoPlateiaSelecionado;
     public GameObject botaoTocarSelecionado;
@@ -68,15 +70,11 @@ public class PhaseSystem : MonoBehaviour
 
         if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying && isMusic)
         {
-            painelPrincipal.SetActive(true);
+            painelFim_fase.SetActive(true);
             painelMusical.SetActive(false);
             painelBotoes.SetActive(false);
             botaoContinuar.SetActive(true);    
             isPlayingMusic = false;
-
-
-            dialogueText.text = "Agradei o público! Bora para a próxima noite!";
-            nameText.text = "Eu:";
 
             EventSystem.current.SetSelectedGameObject(botaoContinuar);
         }
