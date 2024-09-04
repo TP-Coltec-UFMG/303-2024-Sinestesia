@@ -8403,7 +8403,7 @@ RectTransform:
   m_Father: {fileID: 41874326}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.2739274, y: 1}
   m_AnchoredPosition: {x: 9, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8478,7 +8478,7 @@ RectTransform:
   m_Father: {fileID: 498492481}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 0.3123123, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9552,7 +9552,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Agrado:'
+  m_text: 'Agrado: '
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -9968,8 +9968,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1381307194}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.2739274, y: 0}
+  m_AnchorMax: {x: 0.2739274, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -11373,7 +11373,6 @@ GameObject:
   - component: {fileID: 1422212286}
   - component: {fileID: 1422212289}
   - component: {fileID: 1422212288}
-  - component: {fileID: 1422212287}
   m_Layer: 5
   m_Name: Player
   m_TagString: Untagged
@@ -11400,20 +11399,6 @@ RectTransform:
   m_AnchoredPosition: {x: -529.24744, y: 34.701}
   m_SizeDelta: {x: 135.3048, y: 290.1314}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1422212287
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1422212285}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0ac0a3163944dc48a61dc6d1f30e9f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  consultaPlateia: 0
-  pontos: 0
 --- !u!114 &1422212288
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12324,8 +12309,8 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1443202894}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.3123123, y: 0}
+  m_AnchorMax: {x: 0.3123123, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -12385,7 +12370,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1758786444
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13463,7 +13448,7 @@ MonoBehaviour:
   agradoHUD: {fileID: 1810741952}
   dialogueText: {fileID: 1196035813}
   nameText: {fileID: 980311718}
-  player: {fileID: 1422212287}
+  player: {fileID: 0}
   crowd: {fileID: 1758786445}
   painelPrincipal: {fileID: 1702728160}
   painelMusicasTocar: {fileID: 639979938}
@@ -13476,7 +13461,7 @@ MonoBehaviour:
   botaoSairDeTocar: {fileID: 1392350328}
   botaoClicado: {fileID: 0}
   toggleLegendas: {fileID: 683121656}
-  musicaCorreta: 
+  botaoContinuar: {fileID: 0}
   state: 0
 --- !u!4 &2063227640
 Transform:
@@ -13802,7 +13787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2085184025
 RectTransform:
   m_ObjectHideFlags: 0

@@ -12,9 +12,21 @@ EditorBuildSettings:
     path: Assets/Scenes/menuSinestesia.unity
     guid: 24f59464471f04441af3f47f84e938a6
   - enabled: 1
+    path: Assets/Scenes/Intro.unity
+    guid: 6bae5b0ace605004296f656c291852bf
+  - enabled: 1
     path: Assets/Scenes/Fase1.unity
     guid: ac46ee25ed3590102bab27d75bd99576
   - enabled: 1
-    path: Assets/Scenes/Intro.unity
-    guid: 6bae5b0ace605004296f656c291852bf
+    path: Assets/Scenes/Fase2.unity
+    guid: 19a663184b4bb2e45baf34eb7f37fa03
+  - enabled: 1
+    path: Assets/Scenes/Fase3.unity
+    guid: ec8b07d443a749149b12f903c60cda19
+  - enabled: 1
+    path: Assets/Scenes/Fase4.unity
+    guid: 35ee6b88c929ac24f9e8593d5c9eaf0e
+  - enabled: 1
+    path: Assets/Scenes/Loja.unity
+    guid: 8f446d9f3ce9f6b4892421adda063f07
   m_configObjects: {}
