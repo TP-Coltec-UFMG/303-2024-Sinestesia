@@ -24,7 +24,7 @@ public class PlayAudioOnClick : MonoBehaviour
                 AudioManager.instance.PlaySFX("popRaivosoClip");
                 break;
             case "bluesFelizButton":
-                AudioManager.instance.PlaySFX("popRaivosoLClip");
+                AudioManager.instance.PlaySFX("bluesFelizClip");
                 break;
             case "bluesRaivosoButton":
                 AudioManager.instance.PlaySFX("bluesRaivosoClip");

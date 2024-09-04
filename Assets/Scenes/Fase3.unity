@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -302.00012, y: 320.42}
+  m_AnchoredPosition: {x: -302.00015, y: 320.42}
   m_SizeDelta: {x: 390.108, y: 317.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15648883
@@ -13968,9 +13968,8 @@ MonoBehaviour:
   botaoPlateiaSelecionado: {fileID: 1815587424}
   botaoTocarSelecionado: {fileID: 885315613}
   botaoSairDeTocar: {fileID: 1392350328}
-  botaoClicado: {fileID: 0}
   toggleLegendas: {fileID: 683121656}
-  botaoContinuar: {fileID: 0}
+  botaoAvancar: {fileID: 1242924944}
   state: 0
 --- !u!4 &2063227640
 Transform:

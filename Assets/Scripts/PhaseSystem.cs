@@ -33,9 +33,8 @@ public class PhaseSystem : MonoBehaviour
     public GameObject botaoPlateiaSelecionado;
     public GameObject botaoTocarSelecionado;
     public GameObject botaoSairDeTocar;
-    public GameObject botaoClicado;
     public GameObject toggleLegendas;
-    public GameObject botaoContinuar;
+    public GameObject botaoAvancar;
 
     private string musicaCorreta;
 
@@ -76,11 +75,11 @@ public class PhaseSystem : MonoBehaviour
             
             painelFim_fase.SetActive(true);
             painelMusical.SetActive(false);
-            painelBotoes.SetActive(false);
-            botaoContinuar.SetActive(true);    
+            painelBotoes.SetActive(false);    
             isPlayingMusic = false;
 
-            EventSystem.current.SetSelectedGameObject(botaoContinuar);
+            EventSystem.current.SetSelectedGameObject(botaoAvancar);
+
         }
 
         if (isPlayingSpeech && !AudioManager.instance.sfxSource.isPlaying)
@@ -254,12 +253,4 @@ public class PhaseSystem : MonoBehaviour
         SceneManager.LoadScene("menuSinestesia");
         AudioManager.instance.musicSource.Play();
     }
-
-    public void ProximaCena(int index)
-    {
-        Debug.Log(index);
-
-        SceneManager.LoadScene(index + 1);
-    }
-
 }

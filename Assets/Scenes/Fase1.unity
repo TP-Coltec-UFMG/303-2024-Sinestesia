@@ -14456,9 +14456,8 @@ MonoBehaviour:
   botaoPlateiaSelecionado: {fileID: 1815587424}
   botaoTocarSelecionado: {fileID: 885315613}
   botaoSairDeTocar: {fileID: 1392350328}
-  botaoClicado: {fileID: 0}
   toggleLegendas: {fileID: 683121656}
-  botaoContinuar: {fileID: 1963323706}
+  botaoAvancar: {fileID: 695380328}
   state: 0
 --- !u!4 &2063227640
 Transform:
