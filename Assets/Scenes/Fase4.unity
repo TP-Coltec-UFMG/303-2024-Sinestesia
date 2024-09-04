@@ -208,6 +208,8 @@ GameObject:
   m_Component:
   - component: {fileID: 15648882}
   - component: {fileID: 15648883}
+  - component: {fileID: 15648885}
+  - component: {fileID: 15648884}
   m_Layer: 5
   m_Name: jessie
   m_TagString: Untagged
@@ -231,8 +233,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -578, y: 346.72}
+  m_SizeDelta: {x: 305.716, y: 285.662}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15648883
 MonoBehaviour:
@@ -251,6 +253,44 @@ MonoBehaviour:
     sentences:
     - "Espero que ele se mostre uma pessoa otimista e en\xE9rgica, igual os outros
       moradores da cidade!"
+--- !u!114 &15648884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15648881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6782ef47882c9c469aecb8f0d55da6f2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &15648885
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 15648881}
+  m_CullTransparentMesh: 1
 --- !u!1 &20764924
 GameObject:
   m_ObjectHideFlags: 0
@@ -6844,7 +6884,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 525, y: 115}
+  m_AnchoredPosition: {x: 539, y: 115}
   m_SizeDelta: {x: 137.5583, y: 129.5329}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &431291932
@@ -9495,6 +9535,8 @@ GameObject:
   m_Component:
   - component: {fileID: 912293542}
   - component: {fileID: 912293543}
+  - component: {fileID: 912293545}
+  - component: {fileID: 912293544}
   m_Layer: 5
   m_Name: deep
   m_TagString: Untagged
@@ -9518,8 +9560,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -786, y: 356.58}
+  m_SizeDelta: {x: 262.674, y: 256.36}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &912293543
 MonoBehaviour:
@@ -9538,6 +9580,44 @@ MonoBehaviour:
     sentences:
     - Hoje, a noite vai ser animada. Vamos comemorar a chegada de nosso novo vizinho.
       '_'
+--- !u!114 &912293544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912293541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 1f978c6f2d878c9c38f73fb0e25dc89f, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &912293545
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912293541}
+  m_CullTransparentMesh: 1
 --- !u!1 &916455859
 GameObject:
   m_ObjectHideFlags: 0
@@ -13001,6 +13081,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1810870085}
   - component: {fileID: 1810870086}
+  - component: {fileID: 1810870088}
+  - component: {fileID: 1810870087}
   m_Layer: 5
   m_Name: vovo
   m_TagString: Untagged
@@ -13024,8 +13106,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -468, y: 334}
+  m_SizeDelta: {x: 292.514, y: 250.639}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1810870086
 MonoBehaviour:
@@ -13044,6 +13126,44 @@ MonoBehaviour:
     sentences:
     - "Fiquei sabendo que um novo m\xFAsico cantar\xE1 no bar hoje. Finalmente, h\xE1
       anos o bar estava parado e silencioso...  "
+--- !u!114 &1810870087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810870084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: f1c3e3c42a3dab6c191a7265e9b2d99c, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1810870088
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1810870084}
+  m_CullTransparentMesh: 1
 --- !u!1 &1815587424
 GameObject:
   m_ObjectHideFlags: 0
@@ -13360,6 +13480,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1987032736}
   - component: {fileID: 1987032737}
+  - component: {fileID: 1987032739}
+  - component: {fileID: 1987032738}
   m_Layer: 5
   m_Name: explorer
   m_TagString: Untagged
@@ -13383,8 +13505,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchoredPosition: {x: -680, y: 346.72}
+  m_SizeDelta: {x: 275.774, y: 276.081}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1987032737
 MonoBehaviour:
@@ -13402,6 +13524,44 @@ MonoBehaviour:
     name: explorer
     sentences:
     - "Tomara que ele toque uma linda can\xE7\xE3o! Com uma batida animada e dan\xE7ante!!"
+--- !u!114 &1987032738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987032735}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: e55f25aae1fb5a085a5d801d42231b8a, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1987032739
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1987032735}
+  m_CullTransparentMesh: 1
 --- !u!1 &2038489375
 GameObject:
   m_ObjectHideFlags: 0
