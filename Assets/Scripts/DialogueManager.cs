@@ -126,7 +126,7 @@ public class DialogueManager : MonoBehaviour
                 case "deep":
                     AudioManager.instance.PlaySFX("deepRaivoso");
                     break;
-                case "irmao do deep":
+                case "irma do deep":
                     AudioManager.instance.PlaySFX("irmaoRaivoso");
                     break;
                 default:

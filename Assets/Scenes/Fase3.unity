@@ -211,7 +211,7 @@ GameObject:
   - component: {fileID: 15648885}
   - component: {fileID: 15648884}
   m_Layer: 5
-  m_Name: jessie
+  m_Name: jonas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -302.0001, y: 320.42}
+  m_AnchoredPosition: {x: -302.00012, y: 320.42}
   m_SizeDelta: {x: 390.108, y: 317.43}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &15648883
@@ -249,10 +249,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: jessie
+    name: jonas
     sentences:
-    - "Espero que ele se mostre uma pessoa otimista e en\xE9rgica, igual os outros
-      moradores da cidade!"
+    - "Essa noite, todos est\xE3o furiosos. Descobrimos que o bar vai ser fechado
+      unicamente por culpa da mineradora da regi\xE3o!"
 --- !u!114 &15648884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7607,6 +7607,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: VerificaMusica
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 582765767}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &582765769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9316,6 +9328,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: VerificaMusica
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 885315613}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &885315615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9414,7 +9438,7 @@ GameObject:
   - component: {fileID: 912293545}
   - component: {fileID: 912293544}
   m_Layer: 5
-  m_Name: deep
+  m_Name: irma do deep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9452,10 +9476,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: deep
+    name: irma do deep
     sentences:
-    - Hoje, a noite vai ser animada. Vamos comemorar a chegada de nosso novo vizinho.
-      '_'
+    - "N\xE3o acredito, logo agora que est\xE1vamos nos divertindo com bastante m\xFAsica
+      por aqui!"
 --- !u!114 &912293544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12893,8 +12917,7 @@ MonoBehaviour:
   dialogue:
     name: vovo
     sentences:
-    - "Fiquei sabendo que um novo m\xFAsico cantar\xE1 no bar hoje. Finalmente, h\xE1
-      anos o bar estava parado e silencioso...  "
+    - "Preciso ouvir algo triste e col\xE9rico para extravasar esses sentimentos!!"
 --- !u!114 &1810870087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13386,7 +13409,7 @@ GameObject:
   - component: {fileID: 1987032739}
   - component: {fileID: 1987032738}
   m_Layer: 5
-  m_Name: explorer
+  m_Name: deep
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13424,9 +13447,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: explorer
+    name: deep
     sentences:
-    - "Tomara que ele toque uma linda can\xE7\xE3o! Com uma batida animada e dan\xE7ante!!"
+    - "\xC9 imposs\xEDvel n\xE3o ficar estressado com a \xFAltima not\xEDcia. Esse
+      bar \xE9 patrim\xF4nio da cidade."
 --- !u!114 &1987032738
 MonoBehaviour:
   m_ObjectHideFlags: 0
