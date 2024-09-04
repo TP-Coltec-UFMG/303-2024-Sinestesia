@@ -11235,7 +11235,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Explorer
+  m_text: Diana
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
   m_sharedMaterial: {fileID: 4739136797319755146, guid: 729f320a0acf03306b552d15f0ef6b9b, type: 2}
@@ -12850,7 +12850,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1758786443}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
@@ -13494,7 +13494,7 @@ GameObject:
   - component: {fileID: 1987032739}
   - component: {fileID: 1987032738}
   m_Layer: 5
-  m_Name: explorer
+  m_Name: diana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13532,7 +13532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: explorer
+    name: diana
     sentences:
     - "Hoje o dia foi dif\xEDcil... s\xF3 queria ouvir algo que combinasse com essa
       melancolia que estou sentindo..."
@@ -13573,7 +13573,7 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1987032735}
-  m_CullTransparentMesh: 1
+  m_CullTransparentMesh: 0
 --- !u!1 &2038489375
 GameObject:
   m_ObjectHideFlags: 0

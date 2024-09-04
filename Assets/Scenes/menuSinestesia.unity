@@ -2656,7 +2656,7 @@ MonoBehaviour:
   - name: deepRaivoso
     clip: {fileID: 8300000, guid: 09ca1df3523b8724eb38afec74184325, type: 3}
   - name: irmaoRaivoso
-    clip: {fileID: 8300000, guid: 09ca1df3523b8724eb38afec74184325, type: 3}
+    clip: {fileID: 8300000, guid: f836ac3f5df284aa595b15009b5e8329, type: 3}
   musicSource: {fileID: 1448935846}
   sfxSource: {fileID: 2041319667}
   ttsSource: {fileID: 545402340}
