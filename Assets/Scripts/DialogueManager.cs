@@ -40,7 +40,7 @@ public class DialogueManager : MonoBehaviour
         var currentScene = SceneManager.GetActiveScene();
         var currentSceneName = currentScene.name;
 
-        Debug.Log("A cena atual é: " + currentSceneName);
+        Debug.Log("A cena atual ï¿½: " + currentSceneName);
 
         if (sentences.Count == 0) 
         {
@@ -71,7 +71,7 @@ public class DialogueManager : MonoBehaviour
             } 
         }
 
-        if (currentSceneName == "Fase1")
+        if (currentSceneName == "Fase1") 
         {
             switch (nameText.text)
             {
@@ -81,11 +81,53 @@ public class DialogueManager : MonoBehaviour
                 case "jessie":
                     AudioManager.instance.PlaySFX("jessieFeliz");
                     break;
-                case "explorer":
-                    AudioManager.instance.PlaySFX("explorerFeliz");
+                case "diana":
+                    AudioManager.instance.PlaySFX("dianaFeliz");
                     break;
                 case "deep":
                     AudioManager.instance.PlaySFX("deepFeliz");
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        if (currentSceneName == "Fase2") 
+        {
+            switch (nameText.text)
+            {
+                case "vovo":
+                    AudioManager.instance.PlaySFX("vovoTriste");
+                    break;
+                case "jessie":
+                    AudioManager.instance.PlaySFX("jessieTriste");
+                    break;
+                case "diana":
+                    AudioManager.instance.PlaySFX("dianaTriste");
+                    break;
+                case "deep":
+                    AudioManager.instance.PlaySFX("deepTriste");
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        if (currentSceneName == "Fase3")
+        {
+            switch (nameText.text)
+            {
+                case "vovo":
+                    AudioManager.instance.PlaySFX("vovoRaivoso");
+                    break;
+                case "jonas":
+                    AudioManager.instance.PlaySFX("jonasRaivoso");
+                    break;
+                case "deep":
+                    AudioManager.instance.PlaySFX("deepRaivoso");
+                    break;
+                case "irmao do deep":
+                    AudioManager.instance.PlaySFX("irmaoRaivoso");
                     break;
                 default:
                     break;
@@ -102,8 +144,8 @@ public class DialogueManager : MonoBehaviour
                 case "jessie":
                     AudioManager.instance.PlaySFX("jessieTriste");
                     break;
-                case "explorer":
-                    AudioManager.instance.PlaySFX("explorerTriste");
+                case "diana":
+                    AudioManager.instance.PlaySFX("dianaTriste");
                     break;
                 case "deep":
                     AudioManager.instance.PlaySFX("deepTriste");

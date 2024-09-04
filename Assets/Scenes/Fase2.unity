@@ -251,8 +251,7 @@ MonoBehaviour:
   dialogue:
     name: jessie
     sentences:
-    - "Espero que ele se mostre uma pessoa otimista e en\xE9rgica, igual os outros
-      moradores da cidade!"
+    - "S\xF3 ouvindo algo gen\xE9rico e melanc\xF3lico pra conseguir relaxar..."
 --- !u!114 &15648884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7892,6 +7891,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: VerificaMusica
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 582765767}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &582765769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8957,6 +8968,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: VerificaMusica
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 757741667}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &757741669
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9589,6 +9612,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: VerificaMusica
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 885315613}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &885315615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9727,8 +9762,8 @@ MonoBehaviour:
   dialogue:
     name: deep
     sentences:
-    - Hoje, a noite vai ser animada. Vamos comemorar a chegada de nosso novo vizinho.
-      '_'
+    - "Ser\xE1 que esse m\xFAsico n\xE3o se comove com nossas emo\xE7\xF5es? O bar
+      faz parte da hist\xF3ria da cidade, estamos todos tristes..."
 --- !u!114 &912293544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13275,8 +13310,8 @@ MonoBehaviour:
   dialogue:
     name: vovo
     sentences:
-    - "Fiquei sabendo que um novo m\xFAsico cantar\xE1 no bar hoje. Finalmente, h\xE1
-      anos o bar estava parado e silencioso...  "
+    - "Hoje, recebemos a not\xEDcia mais triste do ano... O \xFAnico bar da regi\xE3o
+      vai fechar as suas portas."
 --- !u!114 &1810870087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14050,7 +14085,7 @@ GameObject:
   - component: {fileID: 1987032739}
   - component: {fileID: 1987032738}
   m_Layer: 5
-  m_Name: explorer
+  m_Name: diana
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14088,9 +14123,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    name: explorer
+    name: diana
     sentences:
-    - "Tomara que ele toque uma linda can\xE7\xE3o! Com uma batida animada e dan\xE7ante!!"
+    - "Hoje o dia foi dif\xEDcil... s\xF3 queria ouvir algo que combinasse com essa
+      melancolia que estou sentindo..."
 --- !u!114 &1987032738
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14522,7 +14558,7 @@ MonoBehaviour:
   nameText: {fileID: 980311718}
   player: {fileID: 0}
   crowd: {fileID: 1758786445}
-  painelPrincipal: {fileID: 965050788}
+  painelPrincipal: {fileID: 1702728160}
   painelMusicasTocar: {fileID: 639979938}
   painelPlateia: {fileID: 11754679}
   painelMusical: {fileID: 1066733250}

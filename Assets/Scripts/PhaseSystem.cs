@@ -56,8 +56,10 @@ public class PhaseSystem : MonoBehaviour
     private void Update()
     {
         // verifica se a m�sica ou o �udio gravado terminou de tocar
-        if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying && !isMusic)
+        if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying && isMusic == false)
         {
+            Debug.Log(isMusic);
+
             painelPrincipal.SetActive(true);
             painelMusical.SetActive(false);
             isPlayingMusic = false;
@@ -68,8 +70,10 @@ public class PhaseSystem : MonoBehaviour
             EventSystem.current.SetSelectedGameObject(botaoSairDeTocar);
         }
 
-        if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying && isMusic)
+        if (isPlayingMusic && !AudioManager.instance.sfxSource.isPlaying && isMusic == true)
         {
+            Debug.Log(isMusic);
+            
             painelFim_fase.SetActive(true);
             painelMusical.SetActive(false);
             painelBotoes.SetActive(false);
@@ -178,8 +182,11 @@ public class PhaseSystem : MonoBehaviour
         var nome = botao.name;
         if (nome == musicaCorreta)
         {
-            Musician.Musico.pontos = Convert.ToInt32(Musician.Musico.pontos + (20 / (Musician.Musico.consultaPlateia + 1)));
-            crowd.agrado = 10;
+            Musician.Musico.pontos = Convert.ToInt32(20 / (Musician.Musico.consultaPlateia + 1));
+            crowd.agrado += 3;
+
+            if (crowd.agrado >= 10)
+                crowd.agrado = 10;
 
             Musician.Musico.totalPontos += Musician.Musico.pontos;
 
@@ -188,16 +195,16 @@ public class PhaseSystem : MonoBehaviour
 
             Debug.Log(Musician.Musico.totalPontos);
         } else {
-            Musician.Musico.pontos = Convert.ToInt32(Musician.Musico.pontos - 5 + (5 / (Musician.Musico.consultaPlateia + 1)));
+            Musician.Musico.pontos = Convert.ToInt32((5 * (Musician.Musico.consultaPlateia + 1)));
 
-            Musician.Musico.totalPontos += Musician.Musico.pontos;
+            Musician.Musico.totalPontos -= Musician.Musico.pontos;
 
-            if (Musician.Musico.pontos <= 0)
+            if (Musician.Musico.totalPontos <= 0)
             {
-                Musician.Musico.pontos = 0;
+                Musician.Musico.totalPontos = 0;
             }
             crowd.agrado -= 2;
-            pointsHUD.pointsText.text = "Pontos: " + Musician.Musico.pontos;
+            pointsHUD.pointsText.text = "Pontos: " + Musician.Musico.totalPontos;
             agradoHUD.agradoText.text = "\U0001F614 Agrado: " + crowd.agrado;
 
             Debug.Log(Musician.Musico.totalPontos);

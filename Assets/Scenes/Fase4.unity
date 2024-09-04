@@ -7743,6 +7743,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 2063227639}
+        m_TargetAssemblyTypeName: PhaseSystem, Assembly-CSharp
+        m_MethodName: VerificaMusica
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 582765767}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &582765769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13955,7 +13967,7 @@ MonoBehaviour:
   nameText: {fileID: 980311718}
   player: {fileID: 0}
   crowd: {fileID: 1758786445}
-  painelPrincipal: {fileID: 1425525354}
+  painelPrincipal: {fileID: 1702728160}
   painelMusicasTocar: {fileID: 639979938}
   painelPlateia: {fileID: 11754679}
   painelMusical: {fileID: 1066733250}

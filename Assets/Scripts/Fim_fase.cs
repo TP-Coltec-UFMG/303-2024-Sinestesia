@@ -17,17 +17,17 @@ public class Fim_fase : MonoBehaviour
             SceneManager.LoadScene("Fase2");
             SceneManager.UnloadSceneAsync("Fase1");
 
-        }if(SceneManager.GetSceneByName("Fase2").isLoaded)
+        }else if(SceneManager.GetSceneByName("Fase2").isLoaded)
         {
             SceneManager.LoadScene("Fase3");
             SceneManager.UnloadSceneAsync("Fase2");
 
-        }if(SceneManager.GetSceneByName("Fase3").isLoaded)
+        }else if(SceneManager.GetSceneByName("Fase3").isLoaded)
         {
             SceneManager.LoadScene("Fase4");
             SceneManager.UnloadSceneAsync("Fase3");
 
-        }if(SceneManager.GetSceneByName("Fase4").isLoaded)
+        }else if(SceneManager.GetSceneByName("Fase4").isLoaded)
         {
             SceneManager.LoadScene("Loja");
             SceneManager.UnloadSceneAsync("Fase4");

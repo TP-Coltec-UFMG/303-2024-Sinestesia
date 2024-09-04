@@ -2637,10 +2637,26 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 5065f5ee5cbaf0e48b1bd584a2bbec05, type: 3}
   - name: jessieFeliz
     clip: {fileID: 8300000, guid: aa74ebc895baaab42a188a6b4f4d4e1e, type: 3}
-  - name: explorerFeliz
+  - name: dianaFeliz
     clip: {fileID: 8300000, guid: a0defa8f34f67db498f2ed03aa9ca80f, type: 3}
   - name: deepFeliz
     clip: {fileID: 8300000, guid: fea7b0e67140e324fa26bb4cd444798d, type: 3}
+  - name: vovoTriste
+    clip: {fileID: 8300000, guid: c0ee71b9e4adb024ca9917db6981051a, type: 3}
+  - name: jessieTriste
+    clip: {fileID: 8300000, guid: d94e891c571791b429db794d92a5478a, type: 3}
+  - name: dianaTriste
+    clip: {fileID: 8300000, guid: 674a46f6e464ffd47afe92491d037990, type: 3}
+  - name: deepTriste
+    clip: {fileID: 8300000, guid: 2a610bf5568a0c543848013bc509766c, type: 3}
+  - name: vovoRaivoso
+    clip: {fileID: 8300000, guid: 9016b481f046f7349aef3c8bd22a23d7, type: 3}
+  - name: jonasRaivoso
+    clip: {fileID: 8300000, guid: 96cfaf225d70291468bdb0c808897b4f, type: 3}
+  - name: deepRaivoso
+    clip: {fileID: 8300000, guid: 09ca1df3523b8724eb38afec74184325, type: 3}
+  - name: irmaoRaivoso
+    clip: {fileID: 8300000, guid: 09ca1df3523b8724eb38afec74184325, type: 3}
   musicSource: {fileID: 1448935846}
   sfxSource: {fileID: 2041319667}
   ttsSource: {fileID: 545402340}
