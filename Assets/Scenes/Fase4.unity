@@ -251,8 +251,7 @@ MonoBehaviour:
   dialogue:
     name: jessie
     sentences:
-    - "Espero que ele se mostre uma pessoa otimista e en\xE9rgica, igual os outros
-      moradores da cidade!"
+    - "S\xF3 ouvindo algo gen\xE9rico e melanc\xF3lico pra conseguir relaxar..."
 --- !u!114 &15648884
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9590,8 +9589,8 @@ MonoBehaviour:
   dialogue:
     name: deep
     sentences:
-    - Hoje, a noite vai ser animada. Vamos comemorar a chegada de nosso novo vizinho.
-      '_'
+    - "Ser\xE1 que esse m\xFAsico n\xE3o se comove com nossas emo\xE7\xF5es? O bar
+      faz parte da hist\xF3ria da cidade, estamos todos tristes..."
 --- !u!114 &912293544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13136,8 +13135,8 @@ MonoBehaviour:
   dialogue:
     name: vovo
     sentences:
-    - "Fiquei sabendo que um novo m\xFAsico cantar\xE1 no bar hoje. Finalmente, h\xE1
-      anos o bar estava parado e silencioso...  "
+    - "Hoje, recebemos a not\xEDcia mais triste do ano... O \xFAnico bar da regi\xE3o
+      vai fechar as suas portas."
 --- !u!114 &1810870087
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13535,7 +13534,8 @@ MonoBehaviour:
   dialogue:
     name: explorer
     sentences:
-    - "Tomara que ele toque uma linda can\xE7\xE3o! Com uma batida animada e dan\xE7ante!!"
+    - "Hoje o dia foi dif\xEDcil... s\xF3 queria ouvir algo que combinasse com essa
+      melancolia que estou sentindo..."
 --- !u!114 &1987032738
 MonoBehaviour:
   m_ObjectHideFlags: 0
